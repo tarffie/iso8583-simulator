@@ -1,0 +1,20 @@
+{
+  "name": "iso8583-simulator",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter='server' dev",
+    "tests": "bun run --filter='*' test",
+    "build": "bun run --filter='*' build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
